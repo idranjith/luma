@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men - Luma</title>   
+    <script>
+        !function(e,a,n,t){var i=e.head;if(i){
+        if (a) return;
+        var o=e.createElement("style");
+        o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+        (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, "body { opacity: 0 !important }", 3000);
+    </script>    
+    <script src="https://assets.adobedtm.com/b5cbd1a1220e/25eca88f2eb7/launch-9a00b07b1226-development.min.js" async></script>
+    <script defer type="text/javascript" src="https://ot.aem.live/.rum/@adobe/helix-rum-js@^2/dist/rum-standalone.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-message">
+                        Default welcome msg!
+                    </div>
+                    <div class="header-links">
+                        <a href="#" id="signInLink">Sign In</a>
+                        <a href="account.html" id="accountLink" style="display: none;">My Account</a>
+                        <a href="#" id="signOutLink" style="display: none;">Sign Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Luma" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 40%22%3E%3Ctext x=%2210%22 y=%2225%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22%23ff5501%22%3ELUMA%3C/text%3E%3C/svg%3E'">
+                        </a>
+                    </div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="category-women.html">What's New</a></li>
+                            <li><a href="category-women.html">Women</a></li>
+                            <li><a href="category-men.html" class="active">Men</a></li>
+                            <li><a href="category-equipment.html">Gear</a></li>
+                            <li><a href="category-equipment.html">Training</a></li>
+                            <li><a href="#">Sale</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-actions">
+                        <div class="search-wrapper">
+                            <input type="text" placeholder="Search entire store here..." id="searchInput">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <a href="cart.html" class="cart-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> / <span>Men</span>
+        </div>
+    </div>
+
+    <!-- Category Header -->
+    <section class="category-header">
+        <div class="container">
+            <h1>Men</h1>
+            <p>Performance gear built for the active lifestyle</p>
+        </div>
+    </section>
+
+    <!-- Category Content -->
+    <section class="category-content">
+        <div class="container">
+            <div class="category-layout">
+                <!-- Sidebar Filters -->
+                <aside class="category-sidebar">
+                    <div class="filter-section">
+                        <h3>Shop By</h3>
+                        <div class="filter-group">
+                            <h4>Category</h4>
+                            <label><input type="checkbox" value="tops"> Tops</label>
+                            <label><input type="checkbox" value="bottoms"> Bottoms</label>
+                            <label><input type="checkbox" value="jackets"> Jackets</label>
+                        </div>
+                        <div class="filter-group">
+                            <h4>Size</h4>
+                            <label><input type="checkbox" value="xs"> XS</label>
+                            <label><input type="checkbox" value="s"> S</label>
+                            <label><input type="checkbox" value="m"> M</label>
+                            <label><input type="checkbox" value="l"> L</label>
+                            <label><input type="checkbox" value="xl"> XL</label>
+                        </div>
+                        <div class="filter-group">
+                            <h4>Price</h4>
+                            <label><input type="checkbox" value="0-50"> Under $50</label>
+                            <label><input type="checkbox" value="50-100"> $50 - $100</label>
+                            <label><input type="checkbox" value="100-200"> $100 - $200</label>
+                        </div>
+                        <div class="filter-group">
+                            <h4>Color</h4>
+                            <div class="color-filters">
+                                <span class="color-swatch" data-color="black" style="background: #000;"></span>
+                                <span class="color-swatch" data-color="white" style="background: #fff; border: 1px solid #ddd;"></span>
+                                <span class="color-swatch" data-color="blue" style="background: #1979c3;"></span>
+                                <span class="color-swatch" data-color="red" style="background: #ff5501;"></span>
+                                <span class="color-swatch" data-color="green" style="background: #66bb6a;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Product Grid -->
+                <div class="category-main">
+                    <div class="category-toolbar">
+                        <div class="product-count">
+                            <span id="productCount">0</span> Items
+                        </div>
+                        <div class="sort-by">
+                            <label>Sort By:</label>
+                            <select id="sortSelect">
+                                <option value="position">Position</option>
+                                <option value="name">Name</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-grid" id="categoryProducts">
+                        <!-- Products will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>My Account</h4>
+                    <ul>
+                        <li><a href="account.html">Account Dashboard</a></li>
+                        <li><a href="account.html#orders">Orders</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Luma. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Sign In / Register -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="auth-container">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="signin">Sign In</button>
+                    <button class="auth-tab" data-tab="register">Create Account</button>
+                </div>
+                <div id="signinForm" class="auth-form active">
+                    <h2>Sign In</h2>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" required id="loginEmail">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" required id="loginPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+                    </form>
+                </div>
+                <div id="registerForm" class="auth-form">
+                    <h2>Create Account</h2>
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" required id="regFirstName">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" required id="regLastName">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" required id="regEmail">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" required id="regPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data-layer.js?v=11"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/category.js?v=11"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luma - Performance Fabrics, Yoga & Active Wear</title>
+    <script>
+        !function(e,a,n,t){var i=e.head;if(i){
+        if (a) return;
+        var o=e.createElement("style");
+        o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+        (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, "body { opacity: 0 !important }", 3000);
+    </script>      
+    <script src="https://assets.adobedtm.com/b5cbd1a1220e/25eca88f2eb7/launch-9a00b07b1226-development.min.js" async></script>
+    <script defer type="text/javascript" src="https://ot.aem.live/.rum/@adobe/helix-rum-js@^2/dist/rum-standalone.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-message">
+                        This is a demo website used to teach <a href="https://experienceleague.adobe.com/en/docs/experience-platform/tags/home" target="_blank" style="color: inherit; text-decoration: underline;">Adobe Experience Platform Data Collection</a>
+                    </div>
+                    <div class="header-links">
+                        <a href="#" id="signInLink">Sign In</a>
+                        <a href="account.html" id="accountLink" style="display: none;">My Account</a>
+                        <a href="#" id="signOutLink" style="display: none;">Sign Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Luma">
+                        </a>
+                    </div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="category-women.html">What's New</a></li>
+                            <li><a href="category-women.html">Women</a></li>
+                            <li><a href="category-men.html">Men</a></li>
+                            <li><a href="category-equipment.html">Gear</a></li>
+                            <li><a href="category-equipment.html">Training</a></li>
+                            <li><a href="#">Sale</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-actions">
+                        <div class="search-wrapper">
+                            <input type="text" placeholder="Search entire store here..." id="searchInput">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <a href="cart.html" class="cart-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>New Luma Yoga Collection</h1>
+                <p>Get fit and look fab in new seasonal styles</p>
+                <a href="category-women.html" class="btn btn-primary">Shop New Yoga</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Blocks -->
+    <section class="promo-blocks">
+        <div class="container">
+            <div class="promo-grid">
+                <div class="promo-block">
+                    <img src="images/promo-pants.jpg" alt="Pants" onerror="this.src='https://via.placeholder.com/400x500/1979c3/ffffff?text=20%25+OFF+Luma+Pants'">
+                    <div class="promo-content">
+                        <h3>20% OFF</h3>
+                        <h2>Luma pants when you sign up for SMS</h2>
+                        <a href="category-women.html" class="btn btn-secondary">Shop Pants</a>
+                    </div>
+                </div>
+                <div class="promo-block">
+                    <img src="images/promo-tees.jpg" alt="Tees" onerror="this.src='https://via.placeholder.com/400x500/666666/ffffff?text=Even+more+ways+to+mix%2C+match%2C+and+motivate'">
+                    <div class="promo-content">
+                        <h2>Even more ways to mix, match, and motivate</h2>
+                        <a href="category-men.html" class="btn btn-secondary">Shop Tees</a>
+                    </div>
+                </div>
+                <div class="promo-block">
+                    <img src="images/promo-erin.jpg" alt="Erin Recommends" onerror="this.src='https://via.placeholder.com/400x500/ff5501/ffffff?text=Erin+Recommends'">
+                    <div class="promo-content">
+                        <h3>Erin Recommends</h3>
+                        <h2>Take it from Erin - you need active wear that goes the distance</h2>
+                        <a href="category-women.html" class="btn btn-secondary">Shop Erin Recommends</a>
+                    </div>
+                </div>
+                <div class="promo-block">
+                    <img src="images/promo-science.jpg" alt="Science Meets Performance" onerror="this.src='https://via.placeholder.com/400x500/000000/ffffff?text=Science+meets+performance'">
+                    <div class="promo-content">
+                        <h2>Science meets performance in every piece</h2>
+                        <a href="category-equipment.html" class="btn btn-secondary">Shop Performance Fabrics</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hot Sellers -->
+    <section class="product-section">
+        <div class="container">
+            <h2 class="section-title">Hot Sellers</h2>
+            <div class="product-grid" id="hotSellers">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to our newsletter</h2>
+                <p>Be the first to know about new products, sales, and exclusive offers</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required id="newsletterEmail">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                <div id="newsletterMessage" class="newsletter-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>My Account</h4>
+                    <ul>
+                        <li><a href="account.html">Account Dashboard</a></li>
+                        <li><a href="account.html#orders">Orders</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luma. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Sign In / Register -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="auth-container">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="signin">Sign In</button>
+                    <button class="auth-tab" data-tab="register">Create Account</button>
+                </div>
+                <div id="signinForm" class="auth-form active">
+                    <h2>Sign In</h2>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" required id="loginEmail">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" required id="loginPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+                    </form>
+                </div>
+                <div id="registerForm" class="auth-form">
+                    <h2>Create Account</h2>
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" required id="regFirstName">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" required id="regLastName">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" required id="regEmail">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" required id="regPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data-layer.js?v=11"></script>
+    <script src="js/products.js?v=10"></script>
+    <script src="js/cart.js?v=10"></script>
+    <script src="js/auth.js?v=10"></script>
+    <script src="js/main.js?v=11"></script>
+</body>
+</html>
